@@ -1,0 +1,12 @@
+{% extends 'subject_list/layout.html' %} 
+{% block body %}
+<h1>Subject List:</h1>
+<ul>
+  {% for subject in subject_list %}
+  <li>{{ subject }}</li>
+  {% empty %}
+  <li>No subject.</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}%
